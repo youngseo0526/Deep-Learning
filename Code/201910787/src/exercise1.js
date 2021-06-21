@@ -1,0 +1,16 @@
+var primary = eth.accounts[0];
+var bal=eth.getBalance(primary);
+console.log('1. blocknumber : ', eth.blockNumber);
+console.log('2. enode : ', admin.nodeInfo.enode);
+console.log('3. peercount : ', net.peerCount);
+console.log('4. accountlist : ',eth.accounts);
+console.log('5-1. balance in ether of accountlist[0] : ', web3.fromWei(eth.getBalance(eth.accounts[0])));
+console.log('5-2. balance in ether of accountlist[1] : ', web3.fromWei(eth.getBalance(eth.accounts[1])));
+console.log('5-3. balance in ether of accountlist[2] : ', web3.fromWei(eth.getBalance(eth.accounts[2])));
+console.log('6-1. coinbase before change : ', eth.coinbase);
+miner.setEtherbase(eth.accounts[1]);
+console.log('6-2. coinbase after change : ', eth.coinbase);
+console.log('7-1. waiting transactioncount : ', eth.pendingTransactions);
+console.log('7-2. reason to transaction null : ', "becase it doesn't try mining");
+console.log('8-1. blocknumber : ', eth.blockNumber);
+console.log('8-2. reason to same blocknumber : ', "because it doesn't mining to block while returning accounts and balance");

@@ -1,0 +1,32 @@
+=============== Apr 27, 2021 (KST) ===============
+12:08:40.080916 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:08:40.087258 db@open opening
+12:08:40.088646 version@stat F·[] S·0B[] Sc·[]
+12:08:40.089644 db@janitor F·2 G·0
+12:08:40.089644 db@open done T·2.3857ms
+12:08:40.098711 db@close closing
+12:08:40.099085 db@close done T·373.9µs
+=============== Apr 27, 2021 (KST) ===============
+12:11:52.340071 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:11:52.343698 version@stat F·[] S·0B[] Sc·[]
+12:11:52.343698 db@open opening
+12:11:52.345174 journal@recovery F·1
+12:11:52.345649 journal@recovery recovering @1
+12:11:52.349179 memdb@flush created L0@2 N·10 S·565B "HW\x04..\x9bŰ,v3":"r\x00\x00..\x9bŰ,v5"
+12:11:52.351201 version@stat F·[1] S·565B[565B] Sc·[0.25]
+12:11:52.358217 db@janitor F·3 G·0
+12:11:52.358217 db@open done T·14.5187ms
+12:11:52.365529 db@close closing
+12:11:52.365529 db@close done T·0s
+=============== Apr 27, 2021 (KST) ===============
+12:12:10.796655 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:12:10.799471 version@stat F·[1] S·565B[565B] Sc·[0.25]
+12:12:10.799471 db@open opening
+12:12:10.800452 journal@recovery F·1
+12:12:10.800452 journal@recovery recovering @3
+12:12:10.804794 memdb@flush created L0@5 N·1 S·303B "eth..\x9bŰ,v12":"eth..\x9bŰ,v12"
+12:12:10.806718 version@stat F·[2] S·868B[868B] Sc·[0.50]
+12:12:10.817111 db@janitor F·4 G·0
+12:12:10.817627 db@open done T·18.1556ms
+12:12:10.825056 db@close closing
+12:12:10.825056 db@close done T·0s

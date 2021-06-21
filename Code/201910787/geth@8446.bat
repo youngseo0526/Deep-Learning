@@ -1,0 +1,1 @@
+geth --identity "zaqxs" --allow-insecure-unlock --datadir .\eth --rpc --rpcaddr "localhost" --rpcport "8446" --rpccorsdomain "*" --port "38445" --rpcapi "admin, eth, debug, miner, net, txpool, personal, web3" --networkid 36

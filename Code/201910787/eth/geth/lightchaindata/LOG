@@ -1,0 +1,80 @@
+=============== Mar 24, 2021 (KST) ===============
+00:10:21.616577 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:10:21.620558 db@open opening
+00:10:21.621584 version@stat F·[] S·0B[] Sc·[]
+00:10:21.622614 db@janitor F·2 G·0
+00:10:21.622614 db@open done T·1.5435ms
+00:10:21.630558 db@close closing
+00:10:21.631095 db@close done T·536.9µs
+=============== Apr 27, 2021 (KST) ===============
+11:41:16.150124 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:41:16.204072 version@stat F·[] S·0B[] Sc·[]
+11:41:16.204774 db@open opening
+11:41:16.206069 journal@recovery F·1
+11:41:16.209418 journal@recovery recovering @1
+11:41:16.214037 memdb@flush created L0@2 N·10 S·565B "HW\x04..\x9bŰ,v3":"r\x00\x00..\x9bŰ,v5"
+11:41:16.215207 version@stat F·[1] S·565B[565B] Sc·[0.25]
+11:41:16.227145 db@janitor F·3 G·0
+11:41:16.227195 db@open done T·22.3244ms
+11:41:16.235290 db@close closing
+11:41:16.235290 db@close done T·0s
+=============== Apr 27, 2021 (KST) ===============
+11:49:05.934325 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:49:05.936488 version@stat F·[1] S·565B[565B] Sc·[0.25]
+11:49:05.936991 db@open opening
+11:49:05.937541 journal@recovery F·1
+11:49:05.939087 journal@recovery recovering @3
+11:49:05.942008 memdb@flush created L0@5 N·1 S·303B "eth..\x9bŰ,v12":"eth..\x9bŰ,v12"
+11:49:05.942524 version@stat F·[2] S·868B[868B] Sc·[0.50]
+11:49:05.949647 db@janitor F·4 G·0
+11:49:05.949665 db@open done T·12.6435ms
+11:49:05.957915 db@close closing
+11:49:05.957915 db@close done T·0s
+=============== Apr 27, 2021 (KST) ===============
+11:52:56.556697 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:52:56.559691 version@stat F·[2] S·868B[868B] Sc·[0.50]
+11:52:56.559691 db@open opening
+11:52:56.559970 journal@recovery F·1
+11:52:56.560967 journal@recovery recovering @6
+11:52:56.563277 memdb@flush created L0@8 N·1 S·303B "eth..\x9bŰ,v14":"eth..\x9bŰ,v14"
+11:52:56.565305 version@stat F·[3] S·1KiB[1KiB] Sc·[0.75]
+11:52:56.571354 db@janitor F·5 G·0
+11:52:56.571354 db@open done T·11.6629ms
+11:52:56.578340 db@close closing
+11:52:56.579346 db@close done T·1.0061ms
+=============== May 15, 2021 (KST) ===============
+15:33:57.907775 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:33:57.933927 version@stat F·[3] S·1KiB[1KiB] Sc·[0.75]
+15:33:57.933994 db@open opening
+15:33:57.935611 journal@recovery F·1
+15:33:57.939462 journal@recovery recovering @9
+15:33:57.944108 memdb@flush created L0@11 N·1 S·303B "eth..\x9bŰ,v16":"eth..\x9bŰ,v16"
+15:33:57.945744 version@stat F·[4] S·1KiB[1KiB] Sc·[1.00]
+15:33:57.954484 db@janitor F·6 G·0
+15:33:57.954484 db@open done T·20.49ms
+15:33:57.954916 table@compaction L0·4 -> L1·0 S·1KiB Q·17
+15:33:57.993619 db@close closing
+15:33:57.994682 table@build created L1@14 N·10 S·565B "HW\x04..\x9bŰ,v3":"r\x00\x00..\x9bŰ,v5"
+15:33:57.994682 table@build exiting
+15:33:57.994682 table@build revert @14
+15:33:57.995785 db@close done T·2.1659ms
+=============== May 15, 2021 (KST) ===============
+15:34:36.036815 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:34:36.039807 version@stat F·[4] S·1KiB[1KiB] Sc·[1.00]
+15:34:36.039807 db@open opening
+15:34:36.040804 journal@recovery F·1
+15:34:36.041801 journal@recovery recovering @12
+15:34:36.045362 memdb@flush created L0@14 N·1 S·303B "eth..\x9bŰ,v18":"eth..\x9bŰ,v18"
+15:34:36.047328 version@stat F·[5] S·1KiB[1KiB] Sc·[1.25]
+15:34:36.058766 db@janitor F·7 G·0
+15:34:36.058766 db@open done T·17.9629ms
+15:34:36.058766 table@compaction L0·5 -> L1·0 S·1KiB Q·19
+15:34:36.065983 table@build created L1@17 N·10 S·565B "HW\x04..\x9bŰ,v3":"r\x00\x00..\x9bŰ,v5"
+15:34:36.065983 version@stat F·[0 1] S·565B[0B 565B] Sc·[0.00 0.00]
+15:34:36.066502 table@compaction committed F-4 S-1KiB Ke·0 D·4 T·7.736ms
+15:34:36.067027 table@remove removed @11
+15:34:36.067548 table@remove removed @8
+15:34:36.068073 table@remove removed @5
+15:34:36.068589 table@remove removed @2
+15:34:36.079633 db@close closing
+15:34:36.080154 db@close done T·521.2µs

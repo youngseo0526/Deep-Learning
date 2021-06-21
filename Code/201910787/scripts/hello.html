@@ -1,0 +1,40 @@
+<!doctype>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/web3@1.2.5/dist/web3.min.js"></script>
+<!-- script src="https://cdn.jsdelivr.net/npm/web3@0.20.5/dist/web3.min.js"></script -->
+<script type="text/javascript">
+    //var Web3 = require('web3');  //can be removed
+    var web3 = new Web3(new Web3.providers.HttpProvider("http://172.30.1.40:8045"));
+
+    function displayHello() {
+        //web3@0.20.x
+        //var shelloContract = web3.eth.contract([{"constant":true,"inputs":[],"name":"sayHello","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"pure","type":"function"}]);
+        //var hello = shelloContract.at("0xB7f41a9Bc2fe0794ad654f687327fFbB6E80cd24");
+        //var hello=hello.sayHello.call();
+        //document.getElementById('sayhello').innerText = "The message from blockchain: " + hello;
+        //document.getElementById('web3ver').innerText = 'web3 version 0.20.x';
+        //document.getElementById('web3coinbase').innerText = 'coinbase: ' + web3.eth.coinbase;
+
+        //web3@1.2.x - can not instanciate a contract
+        var shelloContract = new web3.eth.Contract([{"constant":true,"inputs":[],"name":"sayHello","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"pure","type":"function"}],
+                                      "0xe1e222f7567794c4813f2965719f59c15e8a7a84");
+        shelloContract.methods.sayHello().call().then(function(str) {
+            document.getElementById('sayhello').innerText = "The message from blockchain: " + str;
+        });
+        document.getElementById('web3ver').innerText = 'web3 version 1.2.x';
+        web3.eth.getCoinbase().then(function(coin) {
+            document.getElementById('web3coinbase').innerText = 'coinbase: ' + coin;
+            });
+    }
+</script>
+</head>
+<body>
+    <h1>Hello</h1>
+    <button type="button" onClick="displayHello();">Display Hello</button>
+    <div></div>
+    <div id="sayhello"></div>
+    <div id="web3ver"></div>
+    <div id="web3coinbase"></div>
+</body>
+</html>
